@@ -1,2 +1,3 @@
-# ees393_rxr353
-# eecs393_rxr353
+#This is the repo for eecs393
+#Student IDs: rxr353, anr31
+

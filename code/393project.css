@@ -1,0 +1,30 @@
+@charset "utf-8";
+@font-face {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+/* CSS Document */
+
+#menu a {
+	background-color: #0a304e;
+	border: none;
+	color: white;
+	padding: 5px 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	position: relative;
+	left: 700px;
+}
+
+#menu a:hover {
+	background-color:grey;
+}
+
+#menu a:click {
+	background-color:blue;
+}
+
+#menu 

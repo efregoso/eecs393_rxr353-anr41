@@ -37,27 +37,29 @@ if (isset ( $_GET ['logout'] )) {
  
 ?>
 <html>
-<header role="banner" style= "background-color:#0a304e">
+<html>
+    <header role="banner" style= "background-color:#626262">
         <section aria-label="main top level navigation section">
-            <img alt="Case Western Reserve University est 1826" class="logo" src="https://case.edu/umc/media/template/admin-dept-1/images/logos/cwru-formal-blue-tag.png" style = "width:304px;height:100px;">
-        <link href="../393project.css" rel="stylesheet" type="text/css">
-        
-            <div id="menu" align="left">
-            <a href="../index.html">Home</a>
-            <a href="http://google.com">Forum</a>
-            <a href="../syllabus/syllabus.html">Syllabus</a>
-            <a href="http://google.com">Assigments</a>
-            <a href="index.php">Messaging</a>
-            <a href="groupstudy.html">Group Study</a>
-            <a href="http://google.com">Practice</a>
-            </div>
+            <img alt="Case Western Reserve University est 1826" class="logo" src="https://case.edu/umc/media/template/admin-dept-1/images/logos/cwru-formal-blue-tag.png" style = "height:100px;">
+		<link href="../393project.css" rel="stylesheet" type="text/css">
+		
+			<div id="menu" align="right">
+			<a href="../index.html">Home</a>
+			<a href="http://google.com">Forum</a>
+			<a href="../syllabus/syllabus.html">Syllabus</a>
+			<a href="http://google.com">Assigments</a>
+			<a href="index.php">Messaging</a>
+			<a href="../groupstudy.html">Group Study</a>
+			<a href="http://google.com">Practice</a>
+			</div>
         </section>
     </header>
+
 <head>
 <style>
 body {
     font: 12px arial;
-    color: #222;
+    color: white;
     text-align: center;
     padding: 35px;
 }
@@ -83,7 +85,7 @@ a:hover {
 #wrapper,#loginform {
     margin: 0 auto;
     padding-bottom: 25px;
-    background: #EBF4FB;
+    background: #0a304e;
     width: 504px;
     border: 1px solid #ACD8F0;
 }
@@ -101,7 +103,7 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 25px;
     padding: 10px;
-    background: #fff;
+    background: lightblue;
     height: 270px;
     width: 430px;
     border: 1px solid #ACD8F0;
@@ -140,6 +142,8 @@ a:hover {
 </head>
 
 <body>
+<br>
+<br>
     <?php
     if (! isset ( $_SESSION ['name'] )) {
         loginForm ();
@@ -228,3 +232,4 @@ setInterval (loadLog, 100);
 
 </body>
 </html>
+

@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="calculator.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id = "calculator">
+	
+	<div class="calculator-screen" id="screen">
+    
+    </div>    
+    
+    <div class="calculator-buttons-numbers" id="first-row">
+    	<a id="1">1</a>
+        <a id="2">2</a>
+        <a id="3">3</a>
+        <a class="calculator-buttons-ops" id="plus">+</a>
+     </div>
+    
+    <div class="calculator-buttons-numbers" id="second-row">   
+        <a id="4">4</a>
+        <a id="5">5</a>
+        <a id="6">6</a>
+    	<a class="calculator-buttons-ops" id="minus">-</a>
+    </div>
+    
+    <div class="calculator-buttons-numbers" id="third-row">
+        <a id="7">7</a>
+        <a id="8">8</a>
+        <a id="9">9</a>
+        <a class="calculator-buttons-ops" id="mult">*</a>
+    </div>
+    
+    <div class="calculator-buttons-numbers" id="fourth-row">
+    	<a id="C">C</a>
+        <a id="0">0</a>
+        <a id="eq">=</a>
+        <a class="calculator-buttons-ops" id="div">/</a>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+var one = document.getElementById("1");
+var two= document.getElementById("2");
+var three = document.getElementById("3");
+var four = document.getElementById("4");
+var five = document.getElementById("5");
+var six = document.getElementById("6");
+var seven = document.getElementById("7");
+var eight = document.getElementById("8");
+var nine = document.getElementById("9");
+var zero = document.getElementById("0");
+
+var plus = document.getElementById("plus");
+var minus = document.getElementById("minus");
+var mult = document.getElementById("mult");
+var div = document.getElementById("div");
+
+var clear = document.getElementById("C");
+var equals = document.getElementById("eq");
+
+var a;
+var b;
+var op;
+
+var enterOne = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "1";
+};
+
+var enterTwo = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "2";
+};
+
+var enterThree = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "3";
+};
+
+var enterFour = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "4";
+};
+
+var enterFive = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "5";
+};
+
+var enterSix = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "6";
+};
+
+var enterSeven = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "7";
+};
+
+var enterEight = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "8";
+};
+
+var enterNine = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "9";
+};
+
+var enterZero = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "0";
+};
+
+var enterPlus = function() {
+	a = parseInt(document.getElementById("screen").innerHTML);
+	op = "+";
+	document.getElementById("screen").innerHTML = "";
+};
+
+var enterMinus = function() {
+	a = parseInt(document.getElementById("screen").innerHTML);
+	op = "-";
+	document.getElementById("screen").innerHTML = "";
+};
+
+var enterMult = function() {
+	a = parseInt(document.getElementById("screen").innerHTML);
+	op = "*";
+	document.getElementById("screen").innerHTML = "";
+};
+
+var enterDiv = function() {
+	a = parseInt(document.getElementById("screen").innerHTML);
+	op = "/";
+	document.getElementById("screen").innerHTML = "";
+};
+
+var enterEquals = function() {
+	b = parseInt(document.getElementById("screen").innerHTML);
+	if (op == "+") {
+		document.getElementById("screen").innerHTML = String(a + b);
+	}
+	else if (op == "-"){
+		document.getElementById("screen").innerHTML = String(a - b);
+	}
+	else if (op == "*") {
+		document.getElementById("screen").innerHTML = String(a * b);
+	}
+	else if (op == "/") {
+		document.getElementById("screen").innerHTML = String(a / b);
+	}
+};
+
+var enterClear = function() {
+	document.getElementById("screen").innerHTML = "";
+	a = null;
+	b = null;
+	op = null;
+};
+
+one.addEventListener("click", enterOne);
+two.addEventListener("click", enterTwo);
+three.addEventListener("click", enterThree);
+four.addEventListener("click", enterFour);
+five.addEventListener("click", enterFive);
+six.addEventListener("click", enterSix);
+seven.addEventListener("click", enterSeven);
+eight.addEventListener("click", enterEight);
+nine.addEventListener("click", enterNine);
+zero.addEventListener("click", enterZero);
+
+clear.addEventListener("click", enterClear);
+equals.addEventListener("click", enterEquals);
+
+plus.addEventListener("click", enterPlus);
+minus.addEventListener("click", enterMinus);
+mult.addEventListener("click", enterMult);
+div.addEventListener("click", enterDiv);
+
+
+</script>
+
+
+
+</body>
+</html>

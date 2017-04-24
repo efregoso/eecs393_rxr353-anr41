@@ -29,7 +29,7 @@
         </div>
     </div>
 
-	<a href="https://login.case.edu/cas/logout" style="font-size:14px;font-weight:bold;">LOGOUT</a>
+	<a id="logout" href="https://login.case.edu/cas/logout" style="font-size:14px;font-weight:bold;">LOGOUT</a>
 </div>
 
 </div>
@@ -60,15 +60,15 @@ var todoButton = document.getElementById("todo");
 var calculatorButton = document.getElementById("calculator");
 
 var notepad = function(){
-	var myWindow = window.open("http://google.com", "", "width=400, height=600")
+	var myWindow = window.open("notepad.html", "", "width=400, height=600")
 };
 
 var todo = function() {
-	var myWindow = window.open("http://bing.com", "", "width=400, height=600")
+	var myWindow = window.open("todo.html", "", "width=400, height=600")
 };
 
 var calculator = function() {
-	var myWindow = window.open("http://ask.com", "", "width=400, height=600")	
+	var myWindow = window.open("calculator.html", "", "width=400, height=600")	
 };
 
 notepadButton.addEventListener("click", notepad);

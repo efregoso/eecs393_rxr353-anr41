@@ -30,6 +30,11 @@ ol {
 	float:left;
 }
 
+ul {
+	text-decoration:none;
+	float:left;
+}
+
 li {
 	padding:10px;
 	border-bottom:solid;

@@ -28,8 +28,9 @@
     	<a>Webapps</a>
     	</div>
     	<div class="dropdown-links">
-        <a>Notepad</a>
-        <a>To-Do</a>
+       	<a id="notepad">Notepad</a>
+     	<a id="todo">To-Do</a>
+     	<a id="calculator">Calculator</a>
         </div>
     </div>
     
@@ -65,6 +66,28 @@
 <br/>
 
 </div>
+
+<script>
+var notepadButton = document.getElementById("notepad");
+var todoButton = document.getElementById("todo");
+var calculatorButton = document.getElementById("calculator");
+
+var notepad = function(){
+	var myWindow = window.open("http://google.com", "", "width=400, height=600")
+};
+
+var todo = function() {
+	var myWindow = window.open("http://bing.com", "", "width=400, height=600")
+};
+
+var calculator = function() {
+	var myWindow = window.open("http://ask.com", "", "width=400, height=600")	
+};
+
+notepadButton.addEventListener("click", notepad);
+todoButton.addEventListener("click", todo);
+calculatorButton.addEventListener("click", calculator);
+</script>
 
 </body>
 </html>

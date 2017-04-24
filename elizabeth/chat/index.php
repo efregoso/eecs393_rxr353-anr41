@@ -42,23 +42,37 @@ if (isset ( $_GET ['logout'] )) {
         <section aria-label="main top level navigation section">
             <img alt="Case Western Reserve University est 1826" class="logo" src="https://case.edu/umc/media/template/admin-dept-1/images/logos/cwru-formal-blue-tag.png" style = "height:100px;">
 		<link href="../393project.css" rel="stylesheet" type="text/css">
-		<div id = "menu" align = "left">
-            <a href="https://login.case.edu/cas/logout">LOGOUT</a>
-        </div>
+<div id="menu" align="right">
 
-			<div id="menu" align="right">
-			<a href="../index1.html">Home</a>
-			<a href="http://google.com">Forum</a>
-			<a href="../syllabus/syllabus.php">Syllabus</a>
-			<a href="http://google.com">Assigments</a>
-			<a href="index.php">Messaging</a>
-			<a href="../groupstudy.html">Group Study</a>
-			<a href="http://google.com">Practice</a>
-			</div>
+<div id="menu-buttons" align="right">
+	<a href="../index1.html">Home</a>
+	<a href="../tempforum.html">Forum</a>
+	<a href="../syllabus/syllabus.php">Syllabus</a>
+	<a href="../underconstruction.html">Assignments</a>
+	<a href="index.php">Messaging</a>
+	<a href="../groupstudy.html">Group Study</a>
+	<a href="../underconstruction.html">Practice</a>
+    
+    <div class="dropdown">
+		<div class="dropdown-button">
+    	<a>Webapps</a>
+    	</div>
+    	<div class="dropdown-links">
+      	<a id="notepad">Notepad</a>
+     	<a id="todo">To-Do</a>
+     	<a id="calculator">Calculator</a>
+        </div>
+    </div>
+    
+    <a id="logout" href="https://login.case.edu/cas/logout" style="font-size:14px">LOGOUT</a>
+</div>
+
+</div>
         </section>
     </header>
 
 <head>
+
 <style>
 body {
     font: 12px arial;
@@ -232,6 +246,28 @@ setInterval (loadLog, 100);
 <footer>
      &copy; anr41, avb27, emf65, rxr353
  </footer>
+ 
+ <script>
+var notepadButton = document.getElementById("notepad");
+var todoButton = document.getElementById("todo");
+var calculatorButton = document.getElementById("calculator");
+
+var notepad = function(){
+	var myWindow = window.open("../notepad.html", "", "width=400, height=600")
+};
+
+var todo = function() {
+	var myWindow = window.open("../todo.html", "", "width=400, height=600")
+};
+
+var calculator = function() {
+	var myWindow = window.open("../calculator.html", "", "width=400, height=400")	
+};
+
+notepadButton.addEventListener("click", notepad);
+todoButton.addEventListener("click", todo);
+calculatorButton.addEventListener("click", calculator);
+</script>
 
 </body>
 </html>

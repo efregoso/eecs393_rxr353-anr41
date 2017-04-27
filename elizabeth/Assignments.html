@@ -11,10 +11,10 @@
 	<a href="index1.html">Home</a>
 	<a href="forum.html">Forum</a>
 	<a href="syllabus/syllabus.php">Syllabus</a>
-	<a href="underconstruction.html">Assignments</a>
+	<a href="assignments.html">Assignments</a>
 	<a href="chat/index.php">Messaging</a>
 	<a href="groupstudy.html">Group Study</a>
-	<a href="underconstruction.html">Practice</a>
+	<a href="practice.html">Practice</a>
     
     <div class="dropdown">
 		<div class="dropdown-button">
@@ -22,7 +22,6 @@
     	</div>
     	<div class="dropdown-links">
         <a id="notepad">Notepad</a>
-        <a id="todo">To-Do</a>
         <a id="calculator">Calculator</a>
         </div>
     </div>
@@ -54,15 +53,10 @@
 
 <script>
 var notepadButton = document.getElementById("notepad");
-var todoButton = document.getElementById("todo");
 var calculatorButton = document.getElementById("calculator");
 
 var notepad = function(){
 	var myWindow = window.open("notepad.html", "", "width=400, height=600")
-};
-
-var todo = function() {
-	var myWindow = window.open("todo.html", "", "width=400, height=600")
 };
 
 var calculator = function() {
@@ -70,11 +64,7 @@ var calculator = function() {
 };
 
 notepadButton.addEventListener("click", notepad);
-todoButton.addEventListener("click", todo);
 calculatorButton.addEventListener("click", calculator);
-
-var newFile = document.getElementById("newFile");
-var fileName = document.getElementById("fileName");
 </script>
 
 

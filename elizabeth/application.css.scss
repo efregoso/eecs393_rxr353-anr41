@@ -1,0 +1,157 @@
+
+//= require jquery.countdown
+@import "partials/base";
+@import "compass";
+@import "_blueprint";
+@import "blueprint/grid";
+@import "blueprint/reset";
+//= require shared/autocomplete_dropdown
+@include blueprint;
+
+html, body {
+  background-repeat: no-repeat;
+  background-color: #0a304e;
+}
+
+.container {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.heading {
+  background: image-url("logo_small.png") no-repeat -32px 0px;
+  margin: 20px auto 0px;
+  text-align: center;
+  .bar{
+	margin: 400px;
+  }
+  .navigation {
+    background-color: #FFF;
+    clear: both;
+    font-size: 1.4em;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.log {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+  .admin {
+    background-color: #fff;
+    color: #000;
+    line-height: 2.5em;
+    list-style-type: none;
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: #fff;
+    }
+
+  }
+
+}
+
+.heading h1 {
+  font-family: 'Georgia';
+}
+
+.dink {
+  font-family: 'Georgia';
+}
+
+.content {
+  text-align: center;
+  @include prepend-top(15px);
+  @include prepend(1);
+  @include column(22);
+  @include min-height(600px);
+
+  .quickstats {
+    text-align:right;
+    @include prepend(1);
+  }
+}
+
+.headinfo {
+  @include prepend(4);
+  @include column(19);
+  @include append-bottom(20px);
+
+}
+
+.footer {
+  text-align:center;
+  padding:5px 0px;
+  color: black;
+   background-color: grey;
+   a { color: #666; }
+}
+
+.missionlist {
+  font-size:24px;
+}
+
+div.game-header div {
+  margin:10px 0 30px 0;
+}
+
+
+.error {
+  @include error();
+}
+
+@font-face {
+  font-family:'Lato';
+  src: url('/fonts/Lato-Regular.ttf') format('truetype')
+}
+
+th.admin {
+  text-align:center;
+  background-color: $admin-red;
+  color:#FFF;
+
+  a {
+    color:#FFF;
+  }
+}
+
+td.admin {
+  text-align:center;
+  color:$admin-red;
+
+  a {
+    color:$admin-red;
+  }
+}
+
+td.nocenter {
+  text-align:left;
+}
+a.admin {
+  color:$admin-red;
+}
+
+table.gamelist {
+  tbody tr td {
+    height:60px;
+  }
+  td.name {
+    font-size: 2em;
+  }
+}
+
+textarea {
+  max-width: 390px;
+}
+

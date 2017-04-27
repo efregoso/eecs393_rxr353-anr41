@@ -14,6 +14,7 @@
 	box-shadow:5px 5px 5px #555555;
 	border:thick;
 	font-size:40px;
+	width:240px;
 }
 
 .calculator-screen {
@@ -34,7 +35,7 @@
 
 #C {
 	background-color:skyblue;
-	width:30px;
+	width:22px;
 }
 
 #C:hover {
@@ -191,27 +192,31 @@ var enterZero = function() {
 };
 
 var enterPlus = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "+";
 	a = parseInt(document.getElementById("screen").innerHTML);
 	op = "+";
-	document.getElementById("screen").innerHTML = "";
 };
 
 var enterMinus = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "-";
 	a = parseInt(document.getElementById("screen").innerHTML);
 	op = "-";
-	document.getElementById("screen").innerHTML = "";
 };
 
 var enterMult = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "*";
 	a = parseInt(document.getElementById("screen").innerHTML);
 	op = "*";
-	document.getElementById("screen").innerHTML = "";
 };
 
 var enterDiv = function() {
+	var text = document.getElementById("screen").innerHTML;
+	document.getElementById("screen").innerHTML = text + "/";
 	a = parseInt(document.getElementById("screen").innerHTML);
 	op = "/";
-	document.getElementById("screen").innerHTML = "";
 };
 
 var enterEquals = function() {

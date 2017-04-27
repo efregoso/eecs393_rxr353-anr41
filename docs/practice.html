@@ -1,0 +1,80 @@
+<html>
+<header role="banner" style= "width = 100%;">
+<section aria-label="main top level navigation section">
+<img id="logo" alt="Case Western Reserve University est 1826" class="logo" src="https://case.edu/umc/media/template/admin-dept-1/images/logos/cwru-formal-blue-tag.png" style = "height:100px;">
+
+<link href="393project.css" rel="stylesheet" type="text/css">
+
+<div id="menu" align="right">
+
+<div id="menu-buttons" align="right">
+	<a href="index1.html">Home</a>
+	<a href="forum.html">Forum</a>
+	<a href="syllabus/syllabus.php">Syllabus</a>
+	<a href="assignments.html">Assignments</a>
+	<a href="chat/index.php">Messaging</a>
+	<a href="groupstudy.html">Group Study</a>
+	<a href="practice.html">Practice</a>
+    
+    <div class="dropdown">
+		<div class="dropdown-button">
+    	<a>Webapps</a>
+    	</div>
+    	<div class="dropdown-links">
+      	<a id="notepad">Notepad</a>
+     	<a id="calculator">Calculator</a>
+        </div>
+    </div>
+    
+    <a id="logout" href="https://login.case.edu/cas/logout" style="font-size:14px">LOGOUT</a>
+</div>
+
+</div>
+
+</section>
+</header>
+
+<body>
+
+<br/> 
+
+<div id="heading" align="left">
+<h1 style="font-size:60px; color:white; padding:10px">Practice</h1>
+</div>
+
+<div id="content">
+
+<p style="font-size:25px;color:black"><b>Quizie is in Beta!</b></p>
+<p style="font-size:20px">Below is the Python file of our coded program.</p>
+<p style="font-size:20px">We are also able to test Alexa Start Sessions & Intent - Answer sessions from within AWS for verification of test success.</p>
+
+<a href="lambda_function.py">Download the Lambda Function here.</a>
+
+
+</div>
+
+<footer>
+&copy; anr41, avb27, emf65, rxr353
+</footer>
+
+
+
+<script>
+var notepadButton = document.getElementById("notepad");
+var calculatorButton = document.getElementById("calculator");
+
+var notepad = function(){
+	var myWindow = window.open("notepad.html", "", "width=400, height=600")
+};
+
+var calculator = function() {
+	var myWindow = window.open("calculator.html", "", "width=400, height=400")	
+};
+
+notepadButton.addEventListener("click", notepad);
+calculatorButton.addEventListener("click", calculator);
+</script>
+
+</body>
+</html>
+

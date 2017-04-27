@@ -126,7 +126,7 @@ def on_intent(intent_request, session):
     elif intent_name == "AMAZON.CancelIntent":
         return handle_finish_session_request(intent, session)
     else:
-        raise ValueError("Invalid intent")
+        print('Invalid intent')
 
 
 def on_session_ended(session_ended_request, session):
@@ -153,7 +153,7 @@ def get_welcome_response():
     speech_output = intro + spoken_question
     attributes = {"speech_output": speech_output,
                   "reprompt_text": None,
-                  "current_questions_index": starting_index,
+                  "current_questions_index": 0,
                   "questions": game_questions,
                   
                   "answers": OPERATINGSYSTEMS[game_questions[0]].values()[0],

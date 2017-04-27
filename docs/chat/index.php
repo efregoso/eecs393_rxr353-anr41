@@ -45,7 +45,7 @@ if (isset ( $_GET ['logout'] )) {
 <div id="menu" align="right">
 
 <div id="menu-buttons" align="right">
-	<a href="../index1.html">Home</a>
+	<a href="../index.html">Home</a>
 	<a href="../tempforum.html">Forum</a>
 	<a href="../syllabus/syllabus.php">Syllabus</a>
 	<a href="../assignments.html">Assignments</a>
